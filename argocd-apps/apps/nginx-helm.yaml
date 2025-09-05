@@ -11,6 +11,11 @@ spec:
     targetRevision: 15.10.0
     helm:
       releaseName: nginx-helm
+      values: |
+        service:
+          type: NodePort
+          nodePorts:
+            http: 30081      
   destination:
     server: https://kubernetes.default.svc
     namespace: nginx
