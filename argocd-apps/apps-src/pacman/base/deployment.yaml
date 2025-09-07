@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: pacman
-        image: gcrweb/pacman:latest   # 실습용 Pac-Man 웹게임 이미지
+        image: dbafromthecold/pac-man:latest   # 실습용 Pac-Man 웹게임 이미지
         # 만약 Pull 오류가 나면 예비 이미지로 교체:
         # image: alexwhen/docker-2048:latest  # (임시 대체: 2048 게임)
         ports:
