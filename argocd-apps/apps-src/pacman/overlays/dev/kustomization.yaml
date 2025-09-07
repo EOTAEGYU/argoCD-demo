@@ -1,7 +1,7 @@
 resources:
   - ../../base
 
-namePrefix: dev-               # dev- 접두어 (서비스/디플로이 이름에 적용)
+namePrefix: dev-               # dev- 접두어가 리소스명 앞에 붙음
 commonAnnotations:
   env: dev
 

@@ -3,4 +3,4 @@ resources:
   - service.yaml
 
 commonLabels:
-  app.kubernetes.io/part-of: podinfo
+  app.kubernetes.io/part-of: pacman

@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: pacman
+spec:
+  type: NodePort                # 브라우저 접속용
+  selector:
+    app: pacman
+  ports:
+  - name: http
+    port: 80
+    targetPort: 80
+    nodePort: 30082            # 사용 가능한 포트로 조정 가능
