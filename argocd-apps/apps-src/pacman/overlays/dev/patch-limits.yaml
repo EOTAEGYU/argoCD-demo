@@ -3,4 +3,4 @@ kind: Deployment
 metadata:
   name: pacman
 spec:
-  replicas: 2                   # dev 환경: 2개로 확장
+  replicas: 3                  # dev 환경: 2개로 확장
