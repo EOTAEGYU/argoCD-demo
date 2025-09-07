@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/EOTAEGYU/argoCD-demo.git
     targetRevision: main
-    path: apps-src/pacman/overlays/dev   # ← dev 오버레이 경로
+    path: argocd-apps/apps-src/pacman/overlays/dev   # ← dev 오버레이 경로
   destination:
     server: https://kubernetes.default.svc
     namespace: pacman                    # 배포 대상 네임스페이스
