@@ -3,4 +3,14 @@ kind: Deployment
 metadata:
   name: pacman
 spec:
-  replicas: 1                  # dev 환경: 2개로 확장
+  template:
+    spec:
+      containers:
+      - name: pacman
+        resources:
+          requests:
+            cpu: "50m"
+            memory: "64Mi"
+          limits:
+            cpu: "200m"
+            memory: "384Mi"

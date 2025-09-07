@@ -3,14 +3,4 @@ kind: Deployment
 metadata:
   name: pacman
 spec:
-  template:
-    spec:
-      containers:
-      - name: pacman
-        resources:
-          requests:
-            cpu: "50m"
-            memory: "64Mi"
-          limits:
-            cpu: "200m"
-            memory: "384Mi"
+  replicas: 1     
