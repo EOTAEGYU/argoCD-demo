@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: podinfo
+spec:
+  type: NodePort                # 브라우저에서 접근하기 위해 NodePort 사용
+  selector:
+    app: podinfo
+  ports:
+  - name: http
+    port: 80
+    targetPort: 9898
+    nodePort: 30082            # 클러스터 외부 접속 포트 (빈 포트로 조정 가능)

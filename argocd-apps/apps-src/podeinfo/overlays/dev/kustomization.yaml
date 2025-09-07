@@ -1,0 +1,10 @@
+resources:
+  - ../../base
+
+namePrefix: dev-               # dev- 접두어 (서비스/디플로이 이름에 적용)
+commonAnnotations:
+  env: dev
+
+patchesStrategicMerge:
+  - patch-replicas.yaml
+  - patch-limits.yaml
