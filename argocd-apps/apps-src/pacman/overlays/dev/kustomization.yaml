@@ -1,5 +1,6 @@
 resources:
   - ../../base
+  - hpa.yaml
 
 namePrefix: dev-               # dev- 접두어가 리소스명 앞에 붙음
 commonAnnotations:
